@@ -1,0 +1,87 @@
+@import '_variables.scss';
+@import 'mixins.scss';
+
+.fixedContainer{
+    width: 80px;
+    height: 80px;
+    // background-color: rgba(128, 128, 128, 0.527);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+
+    @include MediaQuerie(tablet) {
+        bottom: 20px;
+    }
+    @include MediaQuerie(desktop){
+        right: 10px;
+        bottom: 0;
+        height: 110px;
+    }
+
+
+    &__contentWhatsApp{
+        width: 55px;
+        height: 55px;
+        margin: 12px auto;
+        border-radius: 50%;
+        background-color: rgb(17, 179, 17);
+        cursor: pointer;
+
+        @include MediaQuerie(tablet) {
+            width: 60px;
+            height: 60px;
+        }
+        
+        @include MediaQuerie(desktop) {
+            width: 70px;
+            height: 70px;
+        }
+
+        // centrar
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icons{
+       width: 65%;
+    }
+
+    &__contentNoti{
+        width: 55px;
+        height: 55px;
+        margin: 15px auto;
+        border-radius: 50%;
+        background-color: gray;
+        cursor: pointer;
+
+         // centrar
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+}
+
+
+
+
+// clase tippy js custom
+
+// .tippy-box[data-theme~='red'] {
+//     background-color: $colorRed;
+//     color: white;
+//     padding: 5px;
+//     // font-weight: 600;
+//     font-size: 1.1rem;
+//     font-family: 'Noto Sans TC', sans-serif;
+// }
+
+
+// .tippy-box[data-theme~='red'] {
+//     background-color: $bg-red;
+//     color: white;
+//     padding: 5px;
+//     // font-weight: 600;
+//     font-size: 1.1rem;
+// }

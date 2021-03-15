@@ -1,0 +1,99 @@
+@import '_variables.scss';
+@import 'mixins.scss';
+
+
+
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #fdfdff;
+    margin-top: 50px ;
+    @include flexDirection(column);
+
+    @include MediaQuerie(desktop){
+      @include flexDirection(row)
+    }
+}
+
+.containerFoo1{
+    width: 100%;
+    height: auto;
+
+    @include MediaQuerie(desktop){
+       width: 35%;
+    }
+
+
+    &__logo{
+        width: 200px;
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+
+    &__parrafo{
+        color: #333333;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    &__copyright{
+        text-align: center;
+        color: gray;
+        padding: 15px 0;
+    }
+}
+
+.containerFoo2{
+    width: 100%;
+    height: auto;
+    // background-color: gray;
+
+    @include MediaQuerie(tablet){
+        @include flexDirection(row);
+        justify-content: space-around;
+    }
+
+    @include MediaQuerie(desktop){
+        width: 65%;
+    }
+
+    &__fooCont{
+        padding: 10px;
+    }
+
+    &__titleFoo{
+        text-decoration: 2px underline;
+        color: $color1;
+        margin: 20px 0;
+    }
+
+    &__linkFoo{
+        color: #333333;
+        margin-bottom: 10px;
+    }
+
+    &__social{
+        margin: 3px;
+
+        @include MediaQuerie(tablet){
+            width: 20px;
+            height: 20px;
+        }
+        @include MediaQuerie(desktop){
+            width: 25px;
+            height: 25px;
+            // display: block;
+            // margin: 6px;
+        }
+    }
+
+    &__pay{
+        width: 50px;
+        height: 40px;
+        object-fit: cover;
+        margin: 5px;
+    }
+}

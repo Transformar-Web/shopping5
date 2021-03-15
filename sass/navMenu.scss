@@ -1,0 +1,199 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import '_variables.scss';
+@import 'mixins.scss';
+
+body{
+    font-family: 'Comfortaa', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+}
+
+.nav{
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 0px 3px rgba(0,0,0,0.3);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// subcontenedor 2
+.contentLogo{
+    width: 50%;
+    height: 80px;
+    // background-color: gray;
+    @include centrarFlex();
+    
+    @include MediaQuerie(tablet){
+        width: 25%;
+    }
+    &__logo{
+        width: 135px;
+        height: 135px;
+
+        @include MediaQuerie(desktop){
+           width: 145px;
+           height: 145px;
+        }
+    }
+}
+// ----------------------
+
+// subcontenedor 2
+.logoMenu{
+    width: 50%;
+    height: 80px;
+    // background-color: khaki;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include MediaQuerie(tablet){
+      width: 75%;
+    }
+    @include MediaQuerie(desktop){
+        display: none;
+    }
+
+    &__item{
+      width: 45px;
+      height: 45px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    &__item:hover{
+        transform: scale(1.1);
+        transition: .5s ease;
+    }
+}
+// ------------------------------
+
+// subcontenedor 3
+.containerLinks{
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 20;
+    transition: 1s ease-in-out;
+
+    @include MediaQuerie(tablet){
+        width: 40%;
+    }
+    @include MediaQuerie(desktop){
+        width: 75%;
+        height: 80px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    &__h2{
+        text-align: center;
+        background-color: $color1;
+        color: white;
+        padding: 15px 0;
+        font-size: 1.8rem;
+
+        @include MediaQuerie(desktop){
+            display: none;
+        }
+    }
+
+    &__list{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+
+        @include MediaQuerie(desktop){
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            width: 100%;
+        }
+    }
+    &__li{
+      list-style-type: none; 
+      padding: 10px 0;  
+
+      @include MediaQuerie(desktop){
+        margin: 15px;
+     }
+    }
+    &__a{
+        text-decoration: none;
+        color: $color2;
+        font-size: 1.2rem;
+    }
+    &__a:hover{
+     font-weight: bold;
+    }
+
+    &__li:hover{
+        border-left: 3px solid $color1;
+        // background-color: #f0efef;
+
+        @include MediaQuerie(desktop){
+          border-left: none;
+        }
+    }
+    
+    // sub lista de elementos li
+        &__sublist{
+            display: none;
+            transition: .8s ease-in;
+            background-color: white;
+            
+            @include MediaQuerie(desktop){
+               border-top: 3px solid $color1;
+            }
+        }
+        &__subli{
+            padding: 7px 0;
+            list-style-type: none;
+
+            @include MediaQuerie(desktop){
+                font-size: 1.2rem;
+                padding: 8px 0;
+             }
+        }
+        &__enlace{
+            text-decoration: none;
+            color: $color2;
+        }
+        &__enlace:hover{
+            font-weight: bold;
+            text-decoration: 1.5px $color1 underline;
+        }
+    // ----------------------------------------
+}
+// ---------------------------------------------
+
+// clases que se agrega dinamicamente con js
+.desplazamiento{
+   left: 0;
+}
+
+.sublist-active{
+   display: block;
+}
+
+.down{
+    width: 17px;
+    height: 17px;
+    transform: translateY(4px);
+}
+
+.down-active{
+  transform: rotate(180deg);
+}

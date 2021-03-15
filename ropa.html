@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Shopping5 (Ropa)</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/navMenu.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fixed.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="contentLogo">
+                <img src="img/logoShopping.svg" alt="imagen logo" class="contentLogo__logo">
+            </div>
+            <div class="logoMenu">
+                <img src="img/menu.svg" alt="logo menu" class="logoMenu__item">
+            </div>
+            <div class="containerLinks">
+                <h2 class="containerLinks__h2">Shopping5</h2>
+                <ul class="containerLinks__list">
+                   <li class="containerLinks__li">
+                       <a href="index.html" class="containerLinks__a">Inicio</a>
+                   </li>
+
+                   <li class="containerLinks__li" id="btnDrop">
+                       <a href="#"class="containerLinks__a">Productos 
+                       <img src="img/down-arrow.svg" class="down"></a>
+                       <ul class="containerLinks__sublist">
+                           <li class="containerLinks__subli">
+                               <a href="ropa.html" class="containerLinks__enlace">Ropa</a>
+                           </li>
+                           <li class="containerLinks__subli">
+                               <a href="zapatos.html" class="containerLinks__enlace">Zapatos</a>
+                           </li>
+                           <li class="containerLinks__subli">
+                               <a href="reloj.html" class="containerLinks__enlace">Relojes</a> 
+                           </li>
+                           <li class="containerLinks__subli">
+                              <a href="telefonos.html" class="containerLinks__enlace">Teléfonos</a> 
+                           </li>
+                           <li class="containerLinks__subli">
+                            <a href="mas.html" class="containerLinks__enlace">Más Productos</a> 
+                           </li>
+                       </ul>
+                   </li>
+
+                   <li class="containerLinks__li">
+                       <a href="contact.html" class="containerLinks__a">Contactanos</a>
+                   </li>
+                   <li class="containerLinks__li">
+                       <a href="promociones.html" class="containerLinks__a">Promociones</a>
+                   </li>
+                   <li class="containerLinks__li">
+                       <a href="nostros.html" class="containerLinks__a">Sobre Nosotros</a>
+                   </li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+
+    <main>
+
+
+    <section class="section-slider">
+      <div class="swiper-container">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="containerSlider">
+                    <div class="containerSlider__content1">
+                        <div>
+                           <h1 class="containerSlider__h1">Ofertas especiales</h1>
+                           <p class="containerSlider__p">Shopping5 ofrece las mejores ofertas en toda la linea de ropa, pensando siempre en todos nuestros clientes que visten con las mejores marcas. </p>
+                           <a href="#mostrar" class="containerSlider__btn">Mostrar más</a>
+                        </div>
+                    </div>
+                    <div class="containerSlider__content2">
+                      <img src="img/ropa/shirt.png" class="containerSlider__img">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="containerSlider">
+                   <div class="containerSlider__content1">
+                       <div>
+                          <h1 class="containerSlider__h1">Prendas Femeninas</h1>
+                          <p class="containerSlider__p">Shopping5 cuenta con las mejores prendas femeninas con diseños elegantes que están a la moda y que suelen ser tendencia en muchos países.</p>
+                          <a href="#mostrar2" class="containerSlider__btn">Mostrar más</a>
+                       </div>
+                   </div>
+                   <div class="containerSlider__content2">
+                     <img src="img/ropa/blusa3.png" class="containerSlider__img">
+                   </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="containerSlider">
+                   <div class="containerSlider__content1">
+                       <div>
+                          <h1 class="containerSlider__h1">Prendas Deportivas</h1>
+                          <p class="containerSlider__p">Ofrecemos prendas deportivas para hombres y mujeres que viven el día a día activos, la calidad de la ropa hace que la práctica deportiva sea mucho más cómoda.  </p>
+                          <a href="#mostrar" class="containerSlider__btn">Mostrar más</a>
+                       </div>
+                   </div>
+                   <div class="containerSlider__content2">
+                     <img src="img/ropa/sueter.png" class="containerSlider__img">
+                   </div>
+               </div>
+            </div>
+        </div>
+        
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+
+       </div>
+    </section>
+    
+   <!-- section men -->
+    <section class="sectionClothes">
+         <h2 class="h2">Sección para Hombres</h2>
+
+         <div class="containerClothes" id="mostrar">
+
+              <div class="containerClothes__card">
+                 <div class="containerClothes__cardImg">
+                     <span class="containerClothes__new">Nuevo</span>
+                    <img src="img/ropa/camiseta-adidas.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                 </div>
+                 <div class="containerClothes__contentDetalle">
+                       <div class="containerClothes__text">
+                           <h3>Camiseta Adidas </h3>
+                           <span class="containerClothes__price">L 999</span>
+                       </div>
+                       <div class="containerClothes__containerStars">
+                          <img src="img/ropa/star.svg" class="containerClothes__star">
+                          <img src="img/ropa/star.svg" class="containerClothes__star">
+                          <img src="img/ropa/star.svg" class="containerClothes__star">
+                          <img src="img/ropa/star.svg" class="containerClothes__star">
+                          <img src="img/ropa/star.svg" class="containerClothes__star">
+                       </div>
+                 </div>
+              </div>
+              <div class="containerClothes__card">
+                <div class="containerClothes__cardImg">
+                    <span class="containerClothes__new">Nuevo</span>
+                   <img src="img/ropa/camiseta-ralph.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                </div>
+                <div class="containerClothes__contentDetalle">
+                      <div class="containerClothes__text">
+                          <h3>Camiseta Ralph Lauren</h3>
+                          <span class="containerClothes__price">L 1,350</span>
+                      </div>
+                      <div class="containerClothes__containerStars">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                      </div>
+                </div>
+              </div>
+              <div class="containerClothes__card">
+                <div class="containerClothes__cardImg">
+                    <span class="containerClothes__new">Nuevo</span>
+                   <img src="img/ropa/camiseta-klein.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                </div>
+                <div class="containerClothes__contentDetalle">
+                      <div class="containerClothes__text">
+                          <h3>Camiseta Calvin klein</h3>
+                          <span class="containerClothes__price">L 1,150</span>
+                      </div>
+                      <div class="containerClothes__containerStars">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                      </div>
+                </div>
+              </div>
+              <div class="containerClothes__card">
+                <div class="containerClothes__cardImg">
+                    <span class="containerClothes__new">Nuevo</span>
+                   <img src="img/ropa/tommy.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                </div>
+                <div class="containerClothes__contentDetalle">
+                      <div class="containerClothes__text">
+                          <h3>Camiseta Tommy Hilfiger</h3>
+                          <span class="containerClothes__price">L 1,450</span>
+                      </div>
+                      <div class="containerClothes__containerStars">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                      </div>
+                </div>
+              </div>
+
+              <div class="containerClothes__card">
+                <div class="containerClothes__cardImg">
+                    <span class="containerClothes__new">Nuevo</span>
+                   <img src="img/ropa/levis.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                </div>
+                <div class="containerClothes__contentDetalle">
+                      <div class="containerClothes__text">
+                          <h3>Pantalones Levis</h3>
+                          <span class="containerClothes__price">L 1,999</span>
+                      </div>
+                      <div class="containerClothes__containerStars">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                      </div>
+                </div>
+              </div>
+              <div class="containerClothes__card">
+                <div class="containerClothes__cardImg">
+                    <span class="containerClothes__new">Nuevo</span>
+                   <img src="img/ropa/wilfcraft.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                </div>
+                <div class="containerClothes__contentDetalle">
+                      <div class="containerClothes__text">
+                          <h3>Pantalones Wilfcraft</h3>
+                          <span class="containerClothes__price">L 1,500</span>
+                      </div>
+                      <div class="containerClothes__containerStars">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                      </div>
+                </div>
+              </div>
+              <div class="containerClothes__card">
+                <div class="containerClothes__cardImg">
+                    <span class="containerClothes__new">Nuevo</span>
+                   <img src="img/ropa/pantaloneta.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                </div>
+                <div class="containerClothes__contentDetalle">
+                      <div class="containerClothes__text">
+                          <h3>Pantaloneta Hugo Boss</h3>
+                          <span class="containerClothes__price">L 990</span>
+                      </div>
+                      <div class="containerClothes__containerStars">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                      </div>
+                </div>
+              </div>
+              <div class="containerClothes__card">
+                <div class="containerClothes__cardImg">
+                    <span class="containerClothes__new">Nuevo</span>
+                   <img src="img/ropa/sueter.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                </div>
+                <div class="containerClothes__contentDetalle">
+                      <div class="containerClothes__text">
+                          <h3>Sudadera Nike</h3>
+                          <span class="containerClothes__price">L 2500</span>
+                      </div>
+                      <div class="containerClothes__containerStars">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                      </div>
+                </div>
+              </div>
+         </div>
+    </section>
+
+
+     <!-- section women -->
+    <section class="sectionClothes">
+        <h2 class="h2">Sección para Mujeres</h2>
+
+        <div class="containerClothes" id="mostrar2">
+
+             <div class="containerClothes__card">
+                <div class="containerClothes__cardImg">
+                    <span class="containerClothes__new">Nuevo</span>
+                   <img src="img/ropa/tommy-woman.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                </div>
+                <div class="containerClothes__contentDetalle">
+                      <div class="containerClothes__text">
+                          <h3>Camisa Polo Mujer </h3>
+                          <span class="containerClothes__price">L 1,150</span>
+                      </div>
+                      <div class="containerClothes__containerStars">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                      </div>
+                </div>
+             </div>
+             <div class="containerClothes__card">
+               <div class="containerClothes__cardImg">
+                   <span class="containerClothes__new">Nuevo</span>
+                  <img src="img/ropa/blusah&m.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+               </div>
+               <div class="containerClothes__contentDetalle">
+                     <div class="containerClothes__text">
+                         <h3>Blusa Casual H&M</h3>
+                         <span class="containerClothes__price">L 1,099</span>
+                     </div>
+                     <div class="containerClothes__containerStars">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                     </div>
+               </div>
+             </div>
+             <div class="containerClothes__card">
+               <div class="containerClothes__cardImg">
+                   <span class="containerClothes__new">Nuevo</span>
+                  <img src="img/ropa/blusa3.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+               </div>
+               <div class="containerClothes__contentDetalle">
+                     <div class="containerClothes__text">
+                         <h3>Blusa Zara</h3>
+                         <span class="containerClothes__price">L 1,000</span>
+                     </div>
+                     <div class="containerClothes__containerStars">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                     </div>
+               </div>
+             </div>
+             <div class="containerClothes__card">
+               <div class="containerClothes__cardImg">
+                   <span class="containerClothes__new">Nuevo</span>
+                  <img src="img/ropa/vestido.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+               </div>
+               <div class="containerClothes__contentDetalle">
+                     <div class="containerClothes__text">
+                         <h3>Vestido Casual Stylight</h3>
+                         <span class="containerClothes__price">L 1,899</span>
+                     </div>
+                     <div class="containerClothes__containerStars">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                        <img src="img/ropa/star.svg" class="containerClothes__star">
+                     </div>
+               </div>
+             </div>
+
+
+             <div class="containerClothes__card">
+                <div class="containerClothes__cardImg">
+                    <span class="containerClothes__new">Nuevo</span>
+                   <img src="img/ropa/short-savage.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                </div>
+                <div class="containerClothes__contentDetalle">
+                      <div class="containerClothes__text">
+                          <h3>Short Savage </h3>
+                          <span class="containerClothes__price">L 699</span>
+                      </div>
+                      <div class="containerClothes__containerStars">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                      </div>
+                </div>
+              </div>
+
+              <div class="containerClothes__card">
+                <div class="containerClothes__cardImg">
+                    <span class="containerClothes__new">Nuevo</span>
+                   <img src="img/ropa/jumpsuit.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                </div>
+                <div class="containerClothes__contentDetalle">
+                      <div class="containerClothes__text">
+                          <h3>Jumpsuit</h3>
+                          <span class="containerClothes__price">L 1,369</span>
+                      </div>
+                      <div class="containerClothes__containerStars">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                      </div>
+                </div>
+              </div>
+
+              <div class="containerClothes__card">
+                <div class="containerClothes__cardImg">
+                    <span class="containerClothes__new">Nuevo</span>
+                   <img src="img/ropa/abrigo2.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                </div>
+                <div class="containerClothes__contentDetalle">
+                      <div class="containerClothes__text">
+                          <h3>Abrigo</h3>
+                          <span class="containerClothes__price">L 2,599</span>
+                      </div>
+                      <div class="containerClothes__containerStars">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                      </div>
+                </div>
+              </div>
+
+              <div class="containerClothes__card">
+                <div class="containerClothes__cardImg">
+                    <span class="containerClothes__new">Nuevo</span>
+                   <img src="img/ropa/leggins.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                </div>
+                <div class="containerClothes__contentDetalle">
+                      <div class="containerClothes__text">
+                          <h3>Leggins New Balance</h3>
+                          <span class="containerClothes__price">L 1,499</span>
+                      </div>
+                      <div class="containerClothes__containerStars">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                         <img src="img/ropa/star.svg" class="containerClothes__star">
+                      </div>
+                </div>
+              </div>
+
+             
+   </section>
+
+    </main>
+
+    <!--  -->
+    <div class="fixedContainer">
+        <a href="https://wa.me/+50489303657?" class="fixedContainer__contentWhatsApp" target="_blank">
+            <img src="img/whatsappsvg.svg" class="fixedContainer__icons">
+        </a>
+    </div>
+    <!--  -->
+
+
+    <footer class="footer">
+        <div class="containerFoo1">
+            <img src="img/logoShopping.svg" alt="logo shopping5" class="containerFoo1__logo">
+            <p class="containerFoo1__parrafo">Tienda Shopping5 que dispone de los productos con mejor calidad material garantizada para nuestros clientes, asi mismo disponemos de un servicio de envio a todo el país bastante fiable.</p>
+            <p class="containerFoo1__copyright">Copyright © sitio web desarrollado por www.transformarweb.com</p>
+        </div>
+        <div class="containerFoo2">
+           <div class="containerFoo2__fooCont">
+               <h3 class="containerFoo2__titleFoo">Legal</h3>
+              <p class="containerFoo2__linkFoo">Termino y condiciones</p>
+              <p class="containerFoo2__linkFoo">Politica de privacidad</p>
+              <p class="containerFoo2__linkFoo">Uso de cookies</p>
+              <p class="containerFoo2__linkFoo">Reembolsos</p>
+           </div>
+           <div class="containerFoo2__fooCont">
+              <h3 class="containerFoo2__titleFoo">Sobre Nosotros</h3>
+             <p class="containerFoo2__linkFoo">Quienes somos</p>
+             <p class="containerFoo2__linkFoo">Historia</p>
+             <p class="containerFoo2__linkFoo">Misión y Visión</p>
+          </div>
+          <div class="containerFoo2__fooCont">
+              <h3 class="containerFoo2__titleFoo">Siguenos</h3>
+             <img src="img/facebook.svg" class="containerFoo2__social">
+             <img src="img/twitter.svg" class="containerFoo2__social">
+             <img src="img/instagram.svg" class="containerFoo2__social">
+             <img src="img/messenger.svg" class="containerFoo2__social">
+             <img src="img/whatsapp.svg" class="containerFoo2__social">
+          </div>
+          <div class="containerFoo2__fooCont">
+              <h3 class="containerFoo2__titleFoo">Pagos</h3>
+              <img src="img/visa.png" class="containerFoo2__pay">
+              <img src="img/mastercard.png" class="containerFoo2__pay">
+              <img src="img/paypal.png" class="containerFoo2__pay">
+          </div>
+        </div>
+</footer>
+
+
+
+    <script src="js/menu.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+        //    spaceBetween: 30,
+           centeredSlides: true,
+           autoplay: {
+               delay: 9500,
+           },
+           loop: true,
+           pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+           },
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Shopping5 (Relojes)</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/navMenu.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fixed.css">
+</head>
+
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="contentLogo">
+                <img src="img/logoShopping.svg" alt="imagen logo" class="contentLogo__logo">
+            </div>
+            <div class="logoMenu">
+                <img src="img/menu.svg" alt="logo menu" class="logoMenu__item">
+            </div>
+            <div class="containerLinks">
+                <h2 class="containerLinks__h2">Shopping5</h2>
+                <ul class="containerLinks__list">
+                   <li class="containerLinks__li">
+                       <a href="index.html" class="containerLinks__a">Inicio</a>
+                   </li>
+
+                   <li class="containerLinks__li" id="btnDrop">
+                       <a href="#"class="containerLinks__a">Productos 
+                       <img src="img/down-arrow.svg" class="down"></a>
+                       <ul class="containerLinks__sublist">
+                           <li class="containerLinks__subli">
+                               <a href="ropa.html" class="containerLinks__enlace">Ropa</a>
+                           </li>
+                           <li class="containerLinks__subli">
+                               <a href="zapatos.html" class="containerLinks__enlace">Zapatos</a>
+                           </li>
+                           <li class="containerLinks__subli">
+                               <a href="reloj.html" class="containerLinks__enlace">Relojes</a> 
+                           </li>
+                           <li class="containerLinks__subli">
+                              <a href="telefonos.html" class="containerLinks__enlace">Teléfonos</a> 
+                           </li>
+                           <li class="containerLinks__subli">
+                            <a href="mas.html" class="containerLinks__enlace">Más Productos</a> 
+                           </li>
+                       </ul>
+                   </li>
+
+                   <li class="containerLinks__li">
+                       <a href="contact.html" class="containerLinks__a">Contactanos</a>
+                   </li>
+                   <li class="containerLinks__li">
+                       <a href="promociones.html" class="containerLinks__a">Promociones</a>
+                   </li>
+                   <li class="containerLinks__li">
+                       <a href="nostros.html" class="containerLinks__a">Sobre Nosotros</a>
+                   </li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+
+    <main>
+         
+        <section class="section-slider">
+            <div class="swiper-container">
+  
+              <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                      <div class="containerSlider">
+                          <div class="containerSlider__content1">
+                              <div>
+                                 <h1 class="containerSlider__h1">Los mejores relojes para hombres</h1>
+                                 <p class="containerSlider__p">Conocé todos los modelos de relojes para hombres que dispone nuestra tienda Shopping5 que se encarga de importar las mejores marcas de relojes en el mercado.</p>
+                                 <a href="#mostrar" class="containerSlider__btn">Mostrar más</a>
+                              </div>
+                          </div>
+                          <div class="containerSlider__content2">
+                            <img src="img/reloj/citizen-men.png" class="containerSlider__img">
+                          </div>
+                      </div>
+                 </div>
+
+                    <div class="swiper-slide">
+                         <div class="containerSlider">
+                             <div class="containerSlider__content1">
+                                 <div>
+                                    <h1 class="containerSlider__h1">Los mejores relojes para mujeres</h1>
+                                    <p class="containerSlider__p">Conocé todos los modelos de relojes para mujeres que dispone nuestra tienda Shopping5 amplia variedad de relojes de las mejores marcas de prestigio. </p>
+                                    <a href="#mostrar2" class="containerSlider__btn">Mostrar más</a>
+                                 </div>
+                             </div>
+                             <div class="containerSlider__content2">
+                               <img src="img/reloj/citizen-women.png" class="containerSlider__img">
+                             </div>
+                         </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="containerSlider">
+                            <div class="containerSlider__content1">
+                                <div>
+                                   <h1 class="containerSlider__h1">Los mejores Smartwaches</h1>
+                                   <p class="containerSlider__p">Conocé todos los modelos de relojes smartwatches que dispone nuestra tienda Shopping5, con muchas funcionalidades tecnológicas que nos facilitaran mucho.</p>
+                                   <a href="#mostrar3" class="containerSlider__btn">Mostrar más</a>
+                                </div>
+                            </div>
+                            <div class="containerSlider__content2">
+                              <img src="img/reloj/smartwatches.png" class="containerSlider__img">
+                            </div>
+                        </div>
+                   </div>
+
+                
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+
+        <section class="sectionClothes">
+            <h2 class="h2">Relojes para hombres</h2>
+
+            <div class="containerClothes" id="mostrar">
+
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/citizen-aw1147-52L.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Citizen Eco Drive AW1147</h3>
+                              <span class="containerClothes__price">L 10,500</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>
+                        
+                    
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/Invicta-Men's-15402-Pro-Diver.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Invicta Pro Driver S-15402</h3>
+                              <span class="containerClothes__price">L 9,800</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/srpd63k1-seiko-reloj-automatico-verde-hombre.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Seiko SRPD63K1</h3>
+                              <span class="containerClothes__price">L 9,300</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/citizen-ecodrive-AT2141.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Citizen Eco Drive AT2141</h3>
+                              <span class="containerClothes__price">L 8,900</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>
+                        
+                    
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/Swatch Cognac YVS470.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Swatch Cognac YVS470</h3>
+                              <span class="containerClothes__price">L 7,999</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>
+                        
+                    
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/citizen-ecodrive-chronograph.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Citizen Eco Drive <br> Chronograph</h3>
+                              <span class="containerClothes__price">L 10,650</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>
+                        
+                    
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/invicta-i-force-gunmetal.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Invicta I-FORCE</h3>
+                              <span class="containerClothes__price">L 9,000</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/reloj-casio-collection-hdc-700-3a2vef-1-27398.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Casio HDC700</h3>
+                              <span class="containerClothes__price">L 6,200</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section class="sectionClothes">
+            <h2 class="h2">Relojes para mujeres</h2>
+
+            <div class="containerClothes" id="mostrar2">
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/fossil-jacqueline-es4434.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Fossil Jacqueline</h3>
+                              <span class="containerClothes__price">L 7,500</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>   
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/citizenW-ecodrive-ew1262-55p.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Citizen Eco Drive EW1262</h3>
+                              <span class="containerClothes__price">L 9,750</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>   
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/SEIKO-Womens-Solar-Mother-Of-Pearl-Two-Tone-Diamond-Watch-.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Seiko Pearl Two Tone</h3>
+                              <span class="containerClothes__price">L 10,450</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>   
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/Skagen-signatur-skw2594.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Skagen Signature</h3>
+                              <span class="containerClothes__price">L 5,980</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>   
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/reloj-lotus-rose-para-mujer-18124-1-sumergible.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Lotus Rose</h3>
+                              <span class="containerClothes__price">L 6,550</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>   
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/reloj-citizen-eco-drive-em0854-89y.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Citizen Eco Drive EM0854</h3>
+                              <span class="containerClothes__price">L 8,000</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>   
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/womens-bolt-chronograph-stainless-steel-blue-dial.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Invicta Stainless</h3>
+                              <span class="containerClothes__price">L 8,900</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>   
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                       <img src="img/reloj/citizenW-ecodrive-normandie.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                          <div class="containerClothes__text">
+                              <h3>Citizen Normandie</h3>
+                              <span class="containerClothes__price">L 7,770</span>
+                          </div>
+                          <div class="containerClothes__containerStars">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                             <img src="img/ropa/star.svg" class="containerClothes__star">
+                          </div>
+                    </div>   
+                </div>
+                
+
+            </div>
+
+        </section>
+
+
+        <section class="sectionClothes">
+            <h2 class="h2">Los Smartwatches</h2>
+
+            <div class="containerClothes" id="mostrar3">
+            
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                    <img src="img/reloj/samsung-galaxy-active2.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                        <div class="containerClothes__text">
+                            <h3>Smartwatch Samsung <br> Galaxy Active 2</h3>
+                            <span class="containerClothes__price">L 7,999</span>
+                        </div>
+                        <div class="containerClothes__containerStars">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                        </div>
+                    </div>
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                    <img src="img/reloj/apple-watch-se.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                        <div class="containerClothes__text">
+                            <h3>Apple Watch SE</h3>
+                            <span class="containerClothes__price">L 10,800</span>
+                        </div>
+                        <div class="containerClothes__containerStars">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                    <img src="img/reloj/huawei-watch-fit.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                        <div class="containerClothes__text">
+                            <h3>Huawei Watch Fit</h3>
+                            <span class="containerClothes__price">L 2,500</span>
+                        </div>
+                        <div class="containerClothes__containerStars">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                        </div>
+                    </div>
+                </div>
+                <div class="containerClothes__card">
+                    <div class="containerClothes__cardImg">
+                        <span class="containerClothes__new">Nuevo</span>
+                    <img src="img/reloj/samsung-galaxyW-active2.png" alt="imagen de producto Shopping5" class="containerClothes__imageProduc">
+                    </div>
+                    <div class="containerClothes__contentDetalle">
+                        <div class="containerClothes__text">
+                            <h3>Smartwatch Samsung <br> Active Rosado</h3>
+                            <span class="containerClothes__price">L 7,850</span>
+                        </div>
+                        <div class="containerClothes__containerStars">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                            <img src="img/ropa/star.svg" class="containerClothes__star">
+                        </div>
+                    </div>
+                </div>
+
+             </div>
+        </section>
+
+
+
+    </main>
+
+    <!--  -->
+   <div class="fixedContainer">
+        <a href="https://wa.me/+50489303657?" class="fixedContainer__contentWhatsApp" target="_blank">
+            <img src="img/whatsappsvg.svg" class="fixedContainer__icons">
+        </a>
+    </div>
+    <!--  -->
+
+    <footer class="footer">
+        <div class="containerFoo1">
+            <img src="img/logoShopping.svg" alt="logo shopping5" class="containerFoo1__logo">
+            <p class="containerFoo1__parrafo">Tienda Shopping5 que dispone de los productos con mejor calidad material garantizada para nuestros clientes, asi mismo disponemos de un servicio de envio a todo el país bastante fiable.</p>
+            <p class="containerFoo1__copyright">Copyright © sitio web desarrollado por www.transformarweb.com</p>
+        </div>
+        <div class="containerFoo2">
+           <div class="containerFoo2__fooCont">
+               <h3 class="containerFoo2__titleFoo">Legal</h3>
+              <p class="containerFoo2__linkFoo">Termino y condiciones</p>
+              <p class="containerFoo2__linkFoo">Politica de privacidad</p>
+              <p class="containerFoo2__linkFoo">Uso de cookies</p>
+              <p class="containerFoo2__linkFoo">Reembolsos</p>
+           </div>
+           <div class="containerFoo2__fooCont">
+              <h3 class="containerFoo2__titleFoo">Sobre Nosotros</h3>
+             <p class="containerFoo2__linkFoo">Quienes somos</p>
+             <p class="containerFoo2__linkFoo">Historia</p>
+             <p class="containerFoo2__linkFoo">Misión y Visión</p>
+          </div>
+          <div class="containerFoo2__fooCont">
+              <h3 class="containerFoo2__titleFoo">Siguenos</h3>
+             <img src="img/facebook.svg" class="containerFoo2__social">
+             <img src="img/twitter.svg" class="containerFoo2__social">
+             <img src="img/instagram.svg" class="containerFoo2__social">
+             <img src="img/messenger.svg" class="containerFoo2__social">
+             <img src="img/whatsapp.svg" class="containerFoo2__social">
+          </div>
+          <div class="containerFoo2__fooCont">
+              <h3 class="containerFoo2__titleFoo">Pagos</h3>
+              <img src="img/visa.png" class="containerFoo2__pay">
+              <img src="img/mastercard.png" class="containerFoo2__pay">
+              <img src="img/paypal.png" class="containerFoo2__pay">
+          </div>
+        </div>
+    </footer>
+
+    
+    <script src="js/menu.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+         var swiper = new Swiper('.swiper-container',{
+        //    spaceBetween: 30,
+           centeredSlides: true,
+           autoplay: {
+               delay: 9500,
+           },
+           loop: true,
+           pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+           },
+        })
+    </script>
+</body>
+</html>

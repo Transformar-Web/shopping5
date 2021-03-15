@@ -1,0 +1,59 @@
+.fixedContainer {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+@media screen and (min-width: 760px) {
+  .fixedContainer {
+    bottom: 20px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .fixedContainer {
+    right: 10px;
+    bottom: 0;
+    height: 110px;
+  }
+}
+.fixedContainer__contentWhatsApp {
+  width: 55px;
+  height: 55px;
+  margin: 12px auto;
+  border-radius: 50%;
+  background-color: #11b311;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 760px) {
+  .fixedContainer__contentWhatsApp {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .fixedContainer__contentWhatsApp {
+    width: 70px;
+    height: 70px;
+  }
+}
+.fixedContainer__icons {
+  width: 65%;
+}
+.fixedContainer__contentNoti {
+  width: 55px;
+  height: 55px;
+  margin: 15px auto;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=fixed.css.map */

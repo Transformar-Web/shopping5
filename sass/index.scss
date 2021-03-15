@@ -1,0 +1,285 @@
+
+@import '_variables.scss';
+@import 'mixins.scss';
+
+main{
+    width: 100%;
+    height: auto;
+    // background-color: #fdfdfd;
+    position: relative;
+}
+
+// -------------------------------------
+.sectionContent{
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+
+    @include MediaQuerie(desktop){
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       height: 80vh;
+    }
+
+
+    // subcontenedor 1 de sectionContent
+    &__subcontainer1{
+      width: 100%;
+      height: auto;
+      
+      
+      @include MediaQuerie(desktop){
+        margin-top: 60px;
+        width: 50%;
+      }
+    }
+
+    &__h1{
+        padding: 5px 7px;
+
+        @include MediaQuerie(tablet){
+            font-size: 2.3rem;
+            padding: 5px 11px;
+        }
+    }
+    &__parrafo{
+        padding: 15px 0;
+        width: 95%;
+        height: auto;
+        margin: 10px auto;
+        font-size: 18px;
+
+        @include MediaQuerie(tablet){
+            font-size: 1.3rem;
+        }
+
+        @include MediaQuerie(desktop){
+            font-size: 1.2rem;
+        }
+    }
+    &__btn{
+        text-decoration: none;
+        color: white;
+        padding: 14px 10px;
+        background-color: $color1;
+        border-radius: 7px;
+        margin-left: 7px;
+        margin-top: 5px;
+        display: block;
+        width: 130px;
+        height: auto;
+        font-weight: bold;
+        text-align: center;
+
+        @include MediaQuerie(tablet){
+            margin-left: 11px;
+        }
+    }
+    // -------------------------------
+
+    // subcontenedor 2 de sectionContent
+    &__subcontainer2{
+        width: 100%;
+        height: 300px;
+        margin-top: 10px;
+        position: relative;
+        padding: 20px 0;
+        
+        @include MediaQuerie(desktop){
+            width: 50%;
+            padding: 0;
+        }
+    }
+
+    &__img{
+        width: 100%;
+        transform: translateX(20px);
+        visibility: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in;
+        position: absolute;
+
+        @include MediaQuerie(tablet){
+            transform: translateX(140px);
+            width: 85%;
+        }
+        @include MediaQuerie(desktop){
+            transform: translateX(60px);
+            width: 100%;
+        }
+    }
+
+    &__subcontainer3{
+        width: 100%;
+        height: 60px;
+        
+        @include MediaQuerie(tablet){
+            margin-top: 180px;
+        }
+        @include MediaQuerie(desktop){
+            margin-top: 150px;
+        }
+    }
+
+    &__social{
+        margin: 5px;
+        cursor: pointer;
+    }
+}
+
+.active-slide{
+    visibility: visible;
+    opacity: 1;
+}
+
+// ----------------------------------------
+
+.selectModal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 20;
+    visibility: hidden;
+    opacity: 0;
+
+    // centrar
+    display: flex;
+    justify-content: center;
+
+    @include MediaQuerie(desktop){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.selectModal--active{
+    visibility: visible;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.containerSelect{
+    width: 90%;
+    height: auto;
+    padding: 10px 0;
+
+    @include MediaQuerie(tablet){
+        width: 80%;
+    }
+    @include MediaQuerie(desktop){
+        width: 50%;
+    }
+
+    &__close{
+        width: 100%;
+        height: 35px;
+        position: relative;
+
+        @include MediaQuerie(desktop){
+            height: 20px;
+        }
+    }
+
+    &__imgClose{
+        width: 7%;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        cursor: pointer;
+
+        @include MediaQuerie(tablet){
+            width: 5%;
+        }
+        @include MediaQuerie(tablet){
+            width: 4%;
+        }
+    }
+    
+
+    // -----------------------------
+    &__contentEnlaces{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        cursor: pointer;
+        
+        @include MediaQuerie(tablet){
+            margin-top: 20px;
+            border-radius: 3px;
+        }
+        @include MediaQuerie(desktop){
+            margin-top: 30px;
+        }
+    }
+
+    &__h2{
+        text-align: center;
+        padding: 10px 0;
+
+        @include MediaQuerie(desktop){
+            font-size: 2.4rem;
+            padding: 15px 0;
+        }
+    }
+
+    &__subContentEnlaces{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+
+        @include MediaQuerie(desktop){
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__image{
+        width: 85%;
+        height: 130px;
+        margin: 10px auto;
+        border-radius: 8px;
+        position: relative;
+
+        @include MediaQuerie(tablet){
+          width: 60%;
+          height: 170px;
+        }
+
+        @include MediaQuerie(desktop){
+            width: 45%;
+            height: 180px;
+          }
+    }
+
+    &__tag{
+        width: 100%;
+        height: 25px;
+        background-color: $color1Transparent;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        line-height: 25px;
+        font-weight: bold;
+        font-size: 1.2rem;
+
+        @include MediaQuerie(desktop){
+          height: 30px;
+          line-height: 30px;
+          font-size: 1.4rem;
+        }
+    }
+}
+
+.imgClothes{@include backgroundImage("../img/clothes.webp")}
+.imgShoes{@include backgroundImage("../img/shoes.webp")}
+.imgWatch{@include backgroundImage("../img/watches.webp")}
+.imgPhone{@include backgroundImage("../img/phones.webp")}

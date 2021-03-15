@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/fixed.scss","../sass/mixins.scss"],"names":[],"mappings":"AAGA;EACI;EACA;EAEA;EACA;EACA;EACA;;ACqDI;ED5DR;IAUQ;;;ACqDA;ED/DR;IAaQ;IACA;IACA;;;AAIJ;EACI;EACA;EACA;EACA;EACA;EACA;EAaA;EACA;EACA;;ACoBA;EDzCJ;IASQ;IACA;;;ACkCJ;ED5CJ;IAcQ;IACA;;;AASR;EACG;;AAGH;EACI;EACA;EACA;EACA;EACA;EACA;EAGC;EACA;EACA","file":"fixed.css"}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Shopping5</title>
+    <link rel="stylesheet" href="css/navMenu.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ed962a94c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="contentLogo">
+                <img src="img/logoShopping.svg" alt="imagen logo" class="contentLogo__logo">
+            </div>
+            <div class="logoMenu">
+                <img src="img/menu.svg" alt="logo menu" class="logoMenu__item">
+            </div>
+            <div class="containerLinks">
+                <h2 class="containerLinks__h2">Shopping5</h2>
+                <ul class="containerLinks__list">
+                   <li class="containerLinks__li">
+                       <a href="index.html" class="containerLinks__a">Inicio</a>
+                   </li>
+
+                   <li class="containerLinks__li" id="btnDrop">
+                       <a href="#"class="containerLinks__a">Productos 
+                       <img src="img/down-arrow.svg" class="down"></a>
+                       <ul class="containerLinks__sublist">
+                            <li class="containerLinks__subli">
+                                <a href="ropa.html" class="containerLinks__enlace">Ropa</a>
+                            </li>
+                            <li class="containerLinks__subli">
+                                <a href="zapatos.html" class="containerLinks__enlace">Zapatos</a>
+                            </li>
+                            <li class="containerLinks__subli">
+                                <a href="reloj.html" class="containerLinks__enlace">Relojes</a> 
+                            </li>
+                            <li class="containerLinks__subli">
+                            <a href="telefonos.html" class="containerLinks__enlace">Teléfonos</a> 
+                            </li>
+                            <li class="containerLinks__subli">
+                            <a href="mas.html" class="containerLinks__enlace">Más Productos</a> 
+                            </li>
+                       </ul>
+                   </li>
+
+                   <li class="containerLinks__li">
+                       <a href="contact.html" class="containerLinks__a">Contactanos</a>
+                   </li>
+                   <li class="containerLinks__li">
+                       <a href="promociones.html" class="containerLinks__a">Promociones</a>
+                   </li>
+                   <li class="containerLinks__li">
+                       <a href="nostros.html" class="containerLinks__a">Sobre Nosotros</a>
+                   </li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+
+    <main>
+     <section class="sectionContact">
+           <h1 class="h1">Contactanos</h1>
+           <p class="descrip">Contactate con nosotros a través de nuestro formulario.</p>
+
+           <div class="containerInside">
+                <div class="containerInside__subContai1">
+                   <div class="containerInside__contenido">
+                       <h2 class="containerInside__h2">Para más Información</h2>
+                       <p class="containerInside__parrafo">Envíanos tu mensaje a detalle para atenderte lo más rápido posible y solventar cualquier problema.</p>
+
+                       <span class="containerInside__icon">
+                           <i class="fas fa-phone-alt"></i> +504 2233-0091
+                       </span>
+                       <span class="containerInside__icon">
+                           <i class="fas fa-envelope"></i> shopping5@outlook.com
+                       </span>
+                       <span class="containerInside__icon">
+                           <i class="fas fa-map-marker-alt"></i> Tegucigalpa, Honduras
+                       </span>
+
+                        <div class="containerInside__socials">
+                            <span class="containerInside__redes"><i class="fab fa-facebook"></i></span>
+                            <span class="containerInside__redes"><i class="fab fa-twitter"></i></span>
+                            <span class="containerInside__redes"><i class="fab fa-instagram"></i></span>
+                            <span class="containerInside__redes"><i class="fab fa-facebook-messenger"></i></span>
+                            <span class="containerInside__redes"><i class="fab fa-whatsapp"></i></span>
+                        </div>
+                   </div>   
+                </div>
+
+                <div class="containerInside__subContai2">
+                    <form action="">
+                         <div class="containerInside__divform">
+                            <div class="div">
+                                <label for="input1" class="containerInside__label">
+                                Nombre:</label><br>
+                                <input type="text" placeholder="Ingrese su nombre" id="input1" class="containerInside__inputs" required>
+                            </div>
+                            <div class="div">
+                                <label for="input2" class="containerInside__label">
+                                Apellido:</label><br>
+                                <input type="text" placeholder="Ingrese su apellido" id="input2" class="containerInside__inputs" required>
+                            </div>
+                            <div class="div">
+                                <label for="input3" class="containerInside__label">
+                                Email:</label><br>
+                                <input type="email" placeholder="Ingrese su email" id="input3" class="containerInside__inputs" required>
+                            </div>
+                            <div class="div">
+                                <label for="input4" class="containerInside__label">
+                                Teléfono:</label><br>
+                                <input type="text" placeholder="Ingrese su telefono" id="input4" class="containerInside__inputs" required>
+                            </div>
+                         </div>
+                         <div class="containerInside__textarea">
+                            <label for="textarea" class="containerInside__labelTextarea">
+                            Mensaje:</label><br>
+                            <textarea class="containerInside__mensaje" id="textarea" required></textarea>
+                         </div>
+                          <div class="containerInside__contentBtn">
+                            <input type="submit" value="Enviar" class="containerInside__btn">
+                         </div>
+                    </form>
+                </div>
+           </div>
+     </section>
+    </main>
+
+    <!--  -->
+    <div class="fixedContainer">
+        <a href="https://wa.me/+50489303657?" class="fixedContainer__contentWhatsApp" target="_blank">
+            <img src="img/whatsappsvg.svg" class="fixedContainer__icons">
+        </a>
+    </div>
+    <!--  -->
+
+
+
+    <footer class="footer">
+              <div class="containerFoo1">
+                  <img src="img/logoShopping.svg" alt="logo shopping5" class="containerFoo1__logo">
+                  <p class="containerFoo1__parrafo">Tienda Shopping5 que dispone de los productos con mejor calidad material garantizada para nuestros clientes, asi mismo disponemos de un servicio de envio a todo el país bastante fiable.</p>
+                  <p class="containerFoo1__copyright">Copyright © sitio web desarrollado por www.transformarweb.com</p>
+              </div>
+              <div class="containerFoo2">
+                 <div class="containerFoo2__fooCont">
+                     <h3 class="containerFoo2__titleFoo">Legal</h3>
+                    <p class="containerFoo2__linkFoo">Termino y condiciones</p>
+                    <p class="containerFoo2__linkFoo">Politica de privacidad</p>
+                    <p class="containerFoo2__linkFoo">Uso de cookies</p>
+                    <p class="containerFoo2__linkFoo">Reembolsos</p>
+                 </div>
+                 <div class="containerFoo2__fooCont">
+                    <h3 class="containerFoo2__titleFoo">Sobre Nosotros</h3>
+                   <p class="containerFoo2__linkFoo">Quienes somos</p>
+                   <p class="containerFoo2__linkFoo">Historia</p>
+                   <p class="containerFoo2__linkFoo">Misión y Visión</p>
+                </div>
+                <div class="containerFoo2__fooCont">
+                    <h3 class="containerFoo2__titleFoo">Siguenos</h3>
+                   <img src="img/facebook.svg" class="containerFoo2__social">
+                   <img src="img/twitter.svg" class="containerFoo2__social">
+                   <img src="img/instagram.svg" class="containerFoo2__social">
+                   <img src="img/messenger.svg" class="containerFoo2__social">
+                   <img src="img/whatsapp.svg" class="containerFoo2__social">
+                </div>
+                <div class="containerFoo2__fooCont">
+                    <h3 class="containerFoo2__titleFoo">Pagos</h3>
+                    <img src="img/visa.png" class="containerFoo2__pay">
+                    <img src="img/mastercard.png" class="containerFoo2__pay">
+                    <img src="img/paypal.png" class="containerFoo2__pay">
+                </div>
+              </div>
+    </footer>
+
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
